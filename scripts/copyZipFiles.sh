@@ -5,8 +5,8 @@ cd /opt/files/sib/repo
 rm -rf eCommercehybris*
 rm -rf hybrisdev*
 EOF
-scp /opt/files/sib/repo/eCommercehybris.zip ubuntu@18.208.12.142:/opt/files/sib/repo/
-scp /opt/files/sib/repo/config.zip ubuntu@18.208.12.142:/opt/files/sib/repo/
+scp /opt/files/sib/repo/eCommercehybris.7z ubuntu@18.208.12.142:/opt/files/sib/repo/
+scp /opt/files/sib/repo/hybrisdev.7z ubuntu@18.208.12.142:/opt/files/sib/repo/
 
 ssh ubuntu@18.208.12.142<< EOF
 cd /opt/files/sib/repo
