@@ -5,5 +5,4 @@ whoami
 cd /etc/hybris/hybris/bin/platform
 . ./setantenv.sh
 ./hybrisserver.sh start
-date
 EOF
