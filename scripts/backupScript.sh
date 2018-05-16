@@ -27,7 +27,5 @@ echo "Backing up $backup_files to $dest/$archive_file"
 # Print end status message.
 
 echo "Backup finished"
-
-
 # Long listing of files in $dest to check file sizes.
 ls -lh $dest
