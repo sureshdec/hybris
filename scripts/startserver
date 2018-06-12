@@ -1,0 +1,4 @@
+sudo su  - hybrisadmin -c "cd  /opt/cloudhost/hybris-6.7/hybris/bin/platform/;
+./hybrisserver.sh start"
+sleep 20s
+whoami
