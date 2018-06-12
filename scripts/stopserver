@@ -1,0 +1,11 @@
+#in jenkins job
+whoami
+sudo su - hybrisadmin -c "/opt/cloudhost/scripts/stopserver.sh"
+whoami
+
+#in app server script
+
+echo "Stop Hybris Server"
+cd /opt/cloudhost/hybris-6.7/hybris/bin/platform/
+./hybrisserver.sh start
+sleep 20s
