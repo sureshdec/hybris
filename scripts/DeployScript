@@ -1,0 +1,29 @@
+ssh ubuntu@18.208.12.142 << EOF
+
+sudo -s
+
+sh /opt/backupscript-1552018.sh
+
+sleep 30s
+
+cd /etc/hybris/hybris/config
+
+rm -f localextensions.xml
+rm -f local.properties
+
+cp /opt/files/sib/repo/hybrisdev/localextensions.xml  /etc/hybris/hybris/config
+cp /opt/files/sib/repo/hybrisdev/local.properties    /etc/hybris/hybris/config
+
+cd /etc/hybris/hybris/bin
+
+rm -rf custom 
+
+mkdir custom
+
+cp -R /opt/files/sib/repo/custom /etc/hybris/hybris/bin/
+cd /etc/hybris/hybris/bin/platform
+. ./setantenv.sh
+ant clean all
+
+sleep 2m
+EOF
